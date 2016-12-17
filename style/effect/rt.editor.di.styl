@@ -1,0 +1,67 @@
+.rteditor
+  width: 100%
+  text-align: center
+  position: relative
+  .frtc-bold
+    font-weight: bolder
+  .frtc-italic
+    font-style: italic
+  .frtc-underline
+    text-decoration: underline
+
+  .dogme-ov
+    overflow: visible !important
+    line-height: 2.5rem
+    &:hover
+      .tooltip
+        display: block
+
+  .frt-font
+    background-color: lighten(rgba(43, 45, 50, 0.5), 35%)
+    min-height: 4rem
+    width: 100%
+    margin-top: 1rem
+    padding: 1rem 1.5rem
+    .dogme
+      min-height: 0.5rem
+      height: 2rem
+      min-width: 10rem
+      line-height: 1.5rem
+  #richtextfield,
+  .virayesh-ghab
+    max-width: 100%
+    width: 98%
+    min-height: 38rem
+    margin-top: 1rem
+    border: 2px solid #2b2d32
+  .rt-texarea
+    width: 100%
+    background-color: rgba(255,255,228,0.5)
+    display: none
+    border: 2px solid lighten(#2b2d32, 35%)
+
+.khamosh
+  display: none
+
+.roshan
+  display: block !important
+
+.tooltip
+  position: absolute
+  display: none
+  top: -1.6rem
+  right: -50%
+  height: 1.5rem
+  padding: 0 0.5rem
+  background-color: #2b2d32
+  line-height: 1.5rem
+  border-radius: 0.2rem
+  &:after
+    content: ''
+    position: absolute
+    top: 100%
+    right: 2.5rem
+    margin-left: -5px
+    border-width: 5px
+    border-style: solid
+    border-color: #2b2d32 transparent transparent transparent

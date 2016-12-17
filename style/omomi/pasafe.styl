@@ -1,0 +1,70 @@
+.pasafe
+    width: 100%
+    color: sefid(1)
+    background-color: lighten(tosi(1), 25%)
+    border-top: 1px solid sefid(1)
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    .darbar-pasafe
+        width: 80%
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        >*
+            margin-top: 1rem
+            flex-basis: 24%
+            position: relative
+            padding-right: 0.8rem
+            &:after
+                position: absolute
+                content: ''
+                height: 95%
+                top: 0
+                right: 0
+                border-right: 1px solid lighten(tosi(1), 45%)
+        span.titr-pasafe
+            font-size: 1.2rem
+            color: lighten(bezh(1), 35%)
+        ul
+            margin-top: 0.2rem
+            padding-right: 1rem
+            li
+                margin-top: 0.1rem
+                list-style: none
+    .ad-hg
+        width: 100%
+        background-color: tosi(1)
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        padding: 0 1rem
+        color: sefid(1)
+        .address-b
+            flex-basis: 100%
+            @media(min-width 1000px)
+                flex-basis: 48%
+        .hoghogh
+            flex-basis: 100%
+            @media(min-width 1000px)
+                flex-basis: 48%
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            a.esme
+                cursor: pointer
+                background-color: lighten(tosi(1), 40%)
+                line-height: 2
+                padding: 0.2rem 0.4rem
+                text-align: center
+                flex-basis: 100%
+                @media(min-width 500px)
+                    flex-basis: 48%
+            span
+                text-align: left
+                flex-basis: 100%
+                @media(min-width 500px)
+                    flex-basis: 48%
+        

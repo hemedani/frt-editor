@@ -1,0 +1,78 @@
+html
+  box-sizing border-box
+
+*,
+*:before,
+*:after
+  box-sizing inherit
+
+body
+  direction rtl
+  font-family 'Shabnam', Tahoma, Verdana, Segoe, sans-serif
+  margin 0
+  padding 0
+  border-top 0.15rem solid black
+  line-height: 2rem
+  font-size: 0.9rem
+  color: #605f5f
+
+h1,h2,h3,h4,p,a,button
+	margin: 0
+
+.lafaf
+  display flex
+  flex-flow: row wrap
+  justify-content center
+  overflow: hidden
+  width: 100%
+  min-height: 44rem
+
+.lafaf-100
+  width: 100%
+
+.back-abi
+  background-color: abi(1)
+  color: rgb(255, 255, 255)
+  // padding: 2rem
+  height: 10rem
+  flex-basis: 100%
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+  align-items: center
+
+.lafaf-80
+  flex-basis 92%
+  z-index 5
+
+.cf
+  *zoom 1
+  &:after,
+  &:before
+    content ''
+    display table
+  &:after
+    clear both
+
+.baraks-f
+  align-self: flex-end
+  text-align: left
+  align-items: center
+  margin-top: 1.5rem
+
+.nemayesh-bede
+  display: block !important
+
+.fasballa
+  margin-top 5.5rem
+  @media(min-width 700px)
+    margin-top 7.5rem
+  @media(min-width 990px)
+    margin-top 5.5rem
+
+.chapchin
+	direction ltr
+
+.vasatchin
+  margin 0 auto
+  text-align center
