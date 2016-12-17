@@ -1,6 +1,6 @@
 (function () {
 	'use strict';
-	angular.module('barname.frtEditor', [])
+	angular.module('frtEditor', [])
 		.directive('frtEditor', frtEditor);
 
 	function frtEditor() {

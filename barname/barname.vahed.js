@@ -10,7 +10,7 @@
 			'ngAnimate',
 
 			// directive HA
-			'barname.frtEditor',
+			'frtEditor',
 
 			//vahed haye safahat site
 			'barname.khane',
