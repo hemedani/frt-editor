@@ -23,7 +23,7 @@ module.exports = function() {
 		frtjscss: [ 
 			barname + 'directive/frt.editor.dr.js',
 			mvg + 'templateha.js',
-			mvg + 'index.dr.css'
+			mvg + 'index-dr.css'
 		],
 		
 		tourmajazi: samteKarbar + 'Tour-Majazi/**/*.*',
