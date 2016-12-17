@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="barname">
+
+<head>
+    <base href="/" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ویرایشگر غنی متون فارسی برای انگولار ۱</title>
+
+    <link rel="stylesheet" href="styles/ketab-024606b622.css">
+
+    <link rel="stylesheet" href="styles/narm-9f78c829d4.css">
+
+</head>
+
+<body ng-controller="asliCtrl">
+
+    <div class="navbar">
+        <div class="romenu">
+            <a ui-sref='khane'>
+              <img class="icon-arm" src="tasv/pangolan.png" alt="arm-baloot" />
+            </a>
+            <div class="vorod-div">
+                <a ui-sref="khane">ویرایشگر غنی متون فارسی برای انگولار ۱</a>
+            </div>
+        </div>
+        <div class="zirmenu" id="navmenu">
+            <nav>
+                <span class="menu-icon ion-navicon-round" , ng-click='bazmenu()'></span>
+                <a class='meni-item' ui-sref="khane">خانه</a>
+                <a class='meni-item' ui-sref="nahve">نحوه استفاده</a>
+                <a class='meni-item' ui-sref="tose">توسعه دهندگان</a>
+                <a class='meni-item' ui-sref="mali">کمک مالی</a>
+                <a class='meni-item' ui-sref="link">لینک های مفید</a>
+            </nav>
+            
+        </div>
+    </div>
+
+    <div id="laf-asli">
+        <div ui-view class="main lafaf" ng-animate-children></div>
+    </div>
+
+    <ng-include src="'barname/html/pasafe.html'"></ng-include>
+
+    <script src="js/ketab-a2275bc4e4.js"></script>
+
+    <script src="js/narm-0a6ba5629f.js"></script>
+
+</body>
+
+</html>
