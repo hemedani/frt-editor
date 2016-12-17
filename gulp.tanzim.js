@@ -13,7 +13,7 @@ module.exports = function() {
 
 		tamamejs: barname + '**/*.js',
 		tolid: './tolid/',
-		tolidSite: './tolid-site/',
+		tolidSite: './gh-pages/',
 		karbar: samteKarbar,
 		css: mvg + '*.css',
 		fonts: samteKarbar + 'fonts/**/*.*',
