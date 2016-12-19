@@ -1,45 +1,43 @@
-<div dir="rtl" align="right">
+<img src="http://www.image-share.com/upload/3398/131.jpg">
 
-ویرایشگر غنی متون فارسی برای انگولار ۱
---------------------------------------
-
-----------
-
-
-![عکس ویرایشگر فارسی](http://www.image-share.com/upload/3398/131.jpg)
-
+<div dir='rtl' align='right'>
+<h1>ویرایشگر غنی متون فارسی برای انگولار ۱</h1>
+<br>
 برای دیدن عملکرد و ویژگیهای ویرایشگر به این صفحه برید :
 
-
 [frt-editor](https://hemedani.github.io/frt-editor/) ویرایشگر متن فارسی
+<a href="https://hemedani.github.io/frt-editor/">ویرایشگر متن فارسی - frt-editor</a>
 
-بر از ویژگی ها
+<br>
 
-* بدون نیاز نیاز به هیچ وابستگی ای خارج از انگولار
-* داشتن فونت های استاندارد فارسی
-* پردازش و وارد کردن ویدیو های آپارات
-* قالب بندی مناسب جهت اظهار نظرات
+<h3>برخی از ویژگی ها</h3>
+
+<ul>
+    <li>بدون نیاز نیاز به هیچ وابستگی ای خارج از انگولار</li>
+    <li> داشتن فونت های استاندارد فارسی</li>
+    <li>  پردازش و وارد کردن ویدیو های آپارات</li>
+ </ul>
 
 
-طریقه نصب
 
+
+<h3>طریقه نصب</h3>
 اول دو فایل : 
-</div>
+<ul>
+    <li>frt-editor.css</li>
+    <li>frt-editor.js</li>
+</ul>
+<br>
 
-`frt-editor.css `
-`frt-editor.js`
-
-<div dir="rtl" align="right">
 از پوشه ی تولید به صفحه اینکدس خودتون اضافه کنید :
 </div>
-
 ```html
     <link rel="stylesheet" href="xyz/frt-editor.css">
     <script src="xyz/frt-editor.js"></script>
 ```
 
 <div dir="rtl" align="right">
- و بعد به عنوان یک وابستگی دایرکتیو ‍`frtEditor` رو به ماژول انگولار اضافه اش کنید :
+ و بعد به عنوان یک وابستگی دایرکتیو رو به ماژول انگولار اضافه اش کنید :
 </div>
 
 ```javascript
