@@ -47,8 +47,8 @@ module.exports = function() {
 			file: 'templateha.js',
 			gozineha: {
 				module: 'frtEditor',
-				standAlone: false
-				// root: 'barname/html/'
+				standAlone: false,
+				root: 'barname/html/'
 			}
 		},
 		/**
