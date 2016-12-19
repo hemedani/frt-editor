@@ -16,20 +16,6 @@
 	margin-left: 1rem
 	&:last-child
 		margin-left: 0
-	&::after
-		content ""
-		position absolute
-		z-index -1
-		padding 0.85em 0.75em
-		display block
-		transition all 0.35s
-	&:hover
-		&::after
-			left 0
-			right 0
-			top 0
-			bottom 0
-			transition all 0.35s
 	&:active
 		top 2px
 		color white
@@ -54,28 +40,22 @@
 .i-sabz
 	background-color lighten(tosi(1), 50%)
 	border 1px solid lighten(tosi(1), 60%)
-	overflow hidden
 	&:hover
 		color lighten(tosi(1), 80%)
-	&::after
 		background-color darken(sabz(0.8), 70%)
 
 .i-ghermez
 	background-color lighten(tosi(1), 50%)
 	border 1px solid lighten(tosi(1), 60%)
-	overflow hidden
 	&:hover
 		color lighten(tosi(1), 80%)
-	&::after
 		background-color darken(ghermez(0.8), 40%)
 
 .i-firoz
 	background-color lighten(tosi(1), 50%)
 	border 1px solid lighten(tosi(1), 60%)
-	overflow hidden
 	&:hover
 		color lighten(tosi(1), 80%)
-	&::after
 		background-color darken(firoze(0.8), 40%)
 
 .i-abi
@@ -89,50 +69,25 @@
 .i-sorme
 	background-color lighten(tosi(1), 50%)
 	border 1px solid lighten(sorme(1), 50%)
-	overflow hidden
 	&:hover
 		color sefid(1)
-	&::after
 		background-color lighten(sorme(1), 40%)
 
 .i-tosi
 	background-color lighten(tosi(1), 50%)
 	border 1px solid lighten(tosi(1), 60%)
-	overflow hidden
 	&:hover
 		color lighten(tosi(1), 80%)
-	&::after
 		background-color lighten(tosi(1), 35%)
-
-.i-alt
-	background-image url('../tasv/DSVG/iconalt.svg')
-	background-position center center
-	background-size 100% 100%
 
 .i-gerd
 	border-radius 50%
 	width 50px
 	height 50px
-	&::after
-		border-radius 50%
-		left -50%
-		right -50%
-		top -50%
-		bottom -50%
-		transform scale(0, 0)
-	&:hover
-		&::after
-			transform scale(1, 1)
-			transition all 0.3s ease-out
 
 .i-round
 	border-radius 2px
 	padding 0.1rem 1rem
-	&::after
-		top 0
-		bottom 0
-		left 100%
-		right -100%
 
 .bamatn
 	text-align: center
@@ -159,60 +114,6 @@
 		top: 0.1rem
 		font-size: 20px
 
-.btn-vorod
-	position: fixed
-	left 0
-	top 90px
-	z-index 100
-	.log
-		position: absolute
-		left: 0
-		top: 0
-		height: 2rem
-		font-size: 1.1rem
-		overflow hidden
-		cursor pointer
-		white-space nowrap
-		display inline-block
-		width 60px
-		text-decoration none
-		text-align center
-		color sabz(1)
-		background darken(abi(0.8), 40%)
-		border-top-right-radius 5px
-		border-bottom-right-radius 5px
-		line-height 2
-	.khoroj
-		background darken(ghermez(0.7), 40%)
-	.modiriyat
-		a
-			cursor: pointer
-		.karbar
-			background-color: abi(1)
-			position: absolute
-			top: 2rem
-			left: 0
-			width: 50px
-			height: 1.3rem
-			font-size: 1rem
-			padding-right: 0.8rem
-			color: rgb(255, 255, 255)
-			border-top-right-radius 5px
-			border-bottom-right-radius 5px
-		.email
-			background-color: firoze(1)
-			position: absolute
-			top: 3.3rem
-			left: 0
-			width: 50px
-			height: 1.3rem
-			font-size: 1rem
-			padding-right: 0.8rem
-			color: rgb(255, 255, 255)
-			border-top-right-radius 5px
-			border-bottom-right-radius 5px
-
-
 button:disabled
 	cursor: not-allowed
 	background-color: lighten(tosi(1), 80%)
@@ -222,7 +123,4 @@ button:disabled
 		color sefid(1)
 	&::after
 		background-color: lighten(tosi(1), 65%)
-.dogme-nazar
-	position: relative
-	width: 100%
-	margin-top: 1.5rem
+

@@ -17,7 +17,7 @@
         display: block
 
   .frt-font
-    background-color: lighten(rgba(43, 45, 50, 0.5), 35%)
+    background-color: lighten(tosi(1), 20%)
     min-height: 4rem
     width: 100%
     margin-top: 1rem
@@ -29,16 +29,14 @@
       line-height: 1.5rem
   #richtextfield,
   .virayesh-ghab
-    max-width: 100%
-    width: 98%
+    width: 100%
     min-height: 38rem
-    margin-top: 1rem
-    border: 2px solid #2b2d32
+    border: 2px solid sorme(1)
   .rt-texarea
     width: 100%
-    background-color: rgba(255,255,228,0.5)
+    background-color: bezh(1)
     display: none
-    border: 2px solid lighten(#2b2d32, 35%)
+    border: 2px solid sorme(1)
 
 .khamosh
   display: none
@@ -65,3 +63,22 @@
     border-width: 5px
     border-style: solid
     border-color: #2b2d32 transparent transparent transparent
+
+.vas-nev-div,
+.vas-dog-div
+  position: relative
+  padding: 0.2rem 0
+  background-color: lighten(bezh(1), 80%)
+  &:after
+  	content: ''
+  	position: absolute
+  	bottom: 0
+  	right: 0
+  	width: 100%
+  	border-bottom: 1px solid tosi(1)
+
+.dogmeha-rt
+	border-left: 2px solid sorme(1)
+	border-right: 2px solid sorme(1)
+	border-top: 2px solid sorme(1)
+	margin-bottom: 0

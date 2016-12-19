@@ -1,38 +1,38 @@
 .rteditor
   .dogmeha-rt
     .vas-nev-div
-      span.dogme.i-sorme.i-gerd.dogme-ov(ng-repeat='das in dastorat.vasNev', ng-class='(\'frtc-\' + das.dastor)', ng-click="execIn(das.dastor, null)") 
+      span.dogme.i-sorme.i-round.dogme-ov(ng-repeat='das in dastorat.vasNev', ng-class='(\'frtc-\' + das.dastor)', ng-click="execIn(das.dastor, null)") 
         | {{ das.neveshte }}
         .tooltip
           | {{ das.tooltip }}
     .vas-dog-div
-      span.dogme.i-sorme.i-gerd.dogme-ov(ng-if="iframeT0.contentDocument.designMode === 'off'", ng-click="nemayesh('faal')") فعال
-      span.dogme.i-sorme.i-gerd.dogme-ov(ng-repeat='dogm in dastorat.vasDogm', ng-click="nemayesh(dogm.dastor)") {{dogm.esm}}
+      span.dogme.i-sorme.i-round.dogme-ov(ng-if="iframeT0.contentDocument.designMode === 'off'", ng-click="nemayesh('faal')") فعال
+      span.dogme.i-sorme.i-round.dogme-ov(ng-repeat='dogm in dastorat.vasDogm', ng-click="nemayesh(dogm.dastor)") {{dogm.esm}}
     .form-item
       frt-video.form-tak.taki.khamosh
         label آپارات :
         input(type="text", ng-model='vimodel')
         .baraks-f
-          span.dogme.i-sorme.i-gerd.i-ghabol(ng-click="execIn('insertHTML', vimodel)")
-          span.dogme.i-ghermez.i-gerd.i-rad(ng-click='baste()')
+          span.dogme.i-sorme.i-round.i-ghabol(ng-click="execIn('insertHTML', vimodel)")
+          span.dogme.i-ghermez.i-round.i-rad(ng-click='baste()')
       frt-aks.form-tak.taki.khamosh
         label عکس :
         input(type="text", ng-model='aksmodel')
         .baraks-f
-          span.dogme.i-sorme.i-gerd.i-ghabol(ng-click="execIn('insertImage', aksmodel)")
-          span.dogme.i-ghermez.i-gerd.i-rad(ng-click='baste()')
+          span.dogme.i-sorme.i-round.i-ghabol(ng-click="execIn('insertImage', aksmodel)")
+          span.dogme.i-ghermez.i-round.i-rad(ng-click='baste()')
       frt-aksbk.form-tak.taki.khamosh
         label عکس۲ :
         input(type="text", ng-model='aksbakellas')
         .baraks-f
-          span.dogme.i-sorme.i-gerd.i-ghabol(ng-click="execIn('insertHTML', aksbakellas)")
-          span.dogme.i-ghermez.i-gerd.i-rad(ng-click='baste()')
+          span.dogme.i-sorme.i-round.i-ghabol(ng-click="execIn('insertHTML', aksbakellas)")
+          span.dogme.i-ghermez.i-round.i-rad(ng-click='baste()')
       frt-link.form-tak.taki.khamosh
         label لینک :
         input(type="text", ng-model='linmodel')
         .baraks-f
-          span.dogme.i-sorme.i-gerd.i-ghabol(ng-click="execIn('createLink', linmodel)")
-          span.dogme.i-ghermez.i-gerd.i-rad(ng-click='baste()')
+          span.dogme.i-sorme.i-round.i-ghabol(ng-click="execIn('createLink', linmodel)")
+          span.dogme.i-ghermez.i-round.i-rad(ng-click='baste()')
       frt-block.form-tak.taki.khamosh
         label اظهار نظرات :
         input(type="text", ng-model='aksblmodel', placeholder='عکس')
@@ -40,19 +40,22 @@
         input(type="text", ng-model='sematblmodel', placeholder='سمت')
         input(type="text", ng-model='matnblmodel', placeholder='متن')
         .baraks-f
-          span.dogme.i-sorme.i-gerd.i-ghabol(ng-click="execIn('insertHTML', nazarblmodel)")
-          span.dogme.i-ghermez.i-gerd.i-rad(ng-click='baste()')
+          span.dogme.i-sorme.i-round.i-ghabol(ng-click="execIn('insertHTML', nazarblmodel)")
+          span.dogme.i-ghermez.i-round.i-rad(ng-click='baste()')
       
 
       //- .form-tak.taki.khamosh(ng-repeat='inp in dastorat.dasinp', id='{{inp.esmtag}}')
       //-   label {{inp.label}} :
       //-   input(type="text", ng-model="inp.model")
-      //-   span.dogme.i-sorme.i-gerd.ion-checkmark-round(ng-click="execIn(inp.dastor, inp.modeldastor)")
-      //-   span.dogme.i-ghermez.i-gerd.ion-close-round(ng-click='baste()')
+      //-   span.dogme.i-sorme.i-round.ion-checkmark-round(ng-click="execIn(inp.dastor, inp.modeldastor)")
+      //-   span.dogme.i-ghermez.i-round.ion-close-round(ng-click='baste()')
     
     frt-font.frt-font.khamosh
       span.dogme.i-sorme.i-round(ng-repeat='font in dastorat.fontha', ng-click="execIn('fontName', font.dastor)")
         font(face='font.dastor') {{ font.esm }}
+    
+    frt-fontsize.frt-font.khamosh
+      span.dogme.i-sorme.i-round(ng-repeat='size in dastorat.sizaha', ng-click="execIn('fontSize', size.dastor)") {{ size.dastor }}
 
       
   .frame-rt

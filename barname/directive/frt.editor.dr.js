@@ -93,11 +93,11 @@
 							case 'faal':
 								if (scope.iframeT0.contentDocument.designMode === 'off') {
 									scope.iframeT0.contentDocument.designMode = 'on';
-									
+
 									scope.iframeT.contents()
 										.find('head')
 										.append(styleIframe);
-									
+
 									if (scope.ngModel) {
 										scope.iframeT.contents()
 											.find('body')
@@ -119,6 +119,7 @@
 								element.find('frt-font').removeClass('roshan');
 								element.find('frt-link').removeClass('roshan');
 								element.find('frt-block').removeClass('roshan');
+								element.find('frt-fontsize').removeClass('roshan');
 								break;
 							case 'aks':
 								// console.log( 'tick aks' );
@@ -128,6 +129,7 @@
 								element.find('frt-font').removeClass('roshan');
 								element.find('frt-link').removeClass('roshan');
 								element.find('frt-block').removeClass('roshan');
+								element.find('frt-fontsize').removeClass('roshan');
 								break;
 							case 'aksbk':
 								// console.log( 'tick aks' );
@@ -137,6 +139,7 @@
 								element.find('frt-font').removeClass('roshan');
 								element.find('frt-link').removeClass('roshan');
 								element.find('frt-block').removeClass('roshan');
+								element.find('frt-fontsize').removeClass('roshan');
 								break;
 							case 'font':
 								// console.log( 'tick aks' );
@@ -146,6 +149,7 @@
 								element.find('frt-aks').removeClass('roshan');
 								element.find('frt-link').removeClass('roshan');
 								element.find('frt-block').removeClass('roshan');
+								element.find('frt-fontsize').removeClass('roshan');
 								break;
 							case 'link':
 								// console.log( 'tick aks' );
@@ -155,10 +159,22 @@
 								element.find('frt-aksbk').removeClass('roshan');
 								element.find('frt-aks').removeClass('roshan');
 								element.find('frt-block').removeClass('roshan');
+								element.find('frt-fontsize').removeClass('roshan');
 								break;
 							case 'blokQ':
 								// console.log( 'tick aks' );
 								element.find('frt-block').toggleClass('roshan');
+								element.find('frt-link').removeClass('roshan');
+								element.find('frt-font').removeClass('roshan');
+								element.find('frt-video').removeClass('roshan');
+								element.find('frt-aksbk').removeClass('roshan');
+								element.find('frt-aks').removeClass('roshan');
+								element.find('frt-fontsize').removeClass('roshan');
+								break;
+							case 'size':
+								// console.log( 'tick aks' );
+								element.find('frt-fontsize').toggleClass('roshan');
+								element.find('frt-block').removeClass('roshan');
 								element.find('frt-link').removeClass('roshan');
 								element.find('frt-font').removeClass('roshan');
 								element.find('frt-video').removeClass('roshan');
@@ -175,7 +191,7 @@
 						element.find('frt-video').removeClass('roshan');
 						element.find('frt-aksbk').removeClass('roshan');
 						element.find('frt-aks').removeClass('roshan');
-					}
+					};
 
 					// زیختن مقدار ایفریم در انجی مادل با هر بار فشردن دکمه های کیبرد
 					scope.iframeT.contents()
@@ -214,6 +230,22 @@
 							tooltip: 'لیست بی شماره ای (UnorderedList)',
 							dastor: 'insertUnorderedList'
 						}, {
+							neveshte: 'ر چ',
+							tooltip: 'راست چین (justifyRight)',
+							dastor: 'justifyRight'
+						}, {
+							neveshte: 'چ چ',
+							tooltip: 'چپ چین (justifyLeft)',
+							dastor: 'justifyLeft'
+						},  {
+							neveshte: 'و چ',
+							tooltip: 'وسط چین (justifyCenter)',
+							dastor: 'justifyCenter'
+						},  {
+							neveshte: 'ت ص',
+							tooltip: 'تمام صفحه (justifyFull)',
+							dastor: 'justifyFull'
+						}, {
 							neveshte: 'پ',
 							tooltip: 'پاک کردن قالب بندی (removeFormat)',
 							dastor: 'removeFormat'
@@ -237,6 +269,9 @@
 							dastor: 'font',
 							esm: 'فونت'
 						}, {
+							dastor: 'size',
+							esm: 'اندازه'
+						}, {
 							dastor: 'blokQ',
 							esm: 'نظر'
 						}, {
@@ -246,7 +281,6 @@
 							dastor: 'txa',
 							esm: 'کدها'
 						}],
-
 						// دستوراتی که برای دگمه هاست
 						// dasinp: [ {
 						// 	esmtag: 'video',
@@ -286,7 +320,23 @@
 						}, {
 							dastor: 'Sahel',
 							esm: 'ساحـــل'
-						}, ]
+						}, ],
+
+						sizaha: [{
+							dastor: '1'
+						}, {
+							dastor: '2'
+						}, {
+							dastor: '3'
+						}, {
+							dastor: '4'
+						}, {
+							dastor: '5'
+						}, {
+							dastor: '6'
+						}, {
+							dastor: '7'
+						} ]
 					};
 
 					// scope.$watch( 'vimodel', function( newValue, oldValue ) {

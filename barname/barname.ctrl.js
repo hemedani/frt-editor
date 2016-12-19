@@ -17,12 +17,6 @@
 
 		$rootScope.$on( '$stateChangeSuccess', function () {
 			$window.scrollTo( 0, 0 );
-
-			for ( var i = 0; i < el.length; i++ ) {
-				if ( el[ i ].classList.contains( 'nemayesh-bede' ) ) {
-					el[ i ].classList.remove( 'nemayesh-bede' );
-				}
-			}
 		} );
 
 		$window.addEventListener( 'scroll', function () {

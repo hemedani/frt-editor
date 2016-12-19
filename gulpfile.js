@@ -19,7 +19,7 @@ gulp.task( 'pak', function ( done ) {
 } );
 
 //tasavir ro vadarshtam bayyad baadan be dependhash ezafe konam
-gulp.task( 'tolid-site', [ 'behinesazi-site', 'copy-html' ], function () {
+gulp.task( 'tolid-site', [ 'behinesazi-site', 'copy-html', 'tasavir' ], function () {
 	sabt( 'Darim Posheye Tolid ro Misazim' );
 
 	var pyg = {
@@ -46,7 +46,6 @@ gulp.task( 'tasavir', [ 'pak-tasavir' ], function () {
 	sabt( 'darim aksharo copy to shakhe tolid copy mikonim' );
 	return gulp
 		.src( tanzim.tasavir )
-		.pipe( p$.imagemin() )
 		.pipe( gulp.dest( tanzim.tolidSite + 'tasv' ) );
 } );
 
