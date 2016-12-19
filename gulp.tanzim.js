@@ -18,14 +18,14 @@ module.exports = function() {
 		css: mvg + '*.css',
 		fonts: samteKarbar + 'fonts/**/*.*',
 		htmltemplates: barname + 'html/**/*.html',
-		
+
 		frthtmltmp: barname + 'html/frt.editor.tmd.html',
-		frtjscss: [ 
+		frtjscss: [
 			barname + 'directive/frt.editor.dr.js',
 			mvg + 'templateha.js',
 			mvg + 'index-dr.css'
 		],
-		
+
 		tourmajazi: samteKarbar + 'Tour-Majazi/**/*.*',
 		htmltemaghsad: barname + 'html/',
 		tasavir: samteKarbar + 'tasv/**/*.*',
@@ -46,9 +46,9 @@ module.exports = function() {
 		templateCache: {
 			file: 'templateha.js',
 			gozineha: {
-				module: 'barname',
-				standAlone: false,
-				root: 'barname/html/'
+				module: 'frtEditor',
+				standAlone: false
+				// root: 'barname/html/'
 			}
 		},
 		/**
