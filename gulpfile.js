@@ -62,29 +62,29 @@ gulp.task( 'copy-html', [ 'jade' ], function () {
 		.pipe( gulp.dest( tanzim.tolidSite + 'barname/html' ) );
 } );
 
-gulp.task('templatecache-site', [ 'jade' ],  function() {
-    sabt('Creating an AngularJS $templateCache');
+gulp.task( 'templatecache-site', [ 'jade' ], function () {
+	sabt( 'Creating an AngularJS $templateCache' );
 
-    return gulp
-        .src(tanzim.htmltemplates)
-        .pipe(p$.angularTemplatecache(
-            tanzim.templateCache.file,
-            tanzim.templateCache.gozineha
-        ))
-        .pipe(gulp.dest(tanzim.movaghat));
-});
+	return gulp
+		.src( tanzim.htmltemplates )
+		.pipe( p$.angularTemplatecache(
+			tanzim.templateCache.file,
+			tanzim.templateCache.gozineha
+		) )
+		.pipe( gulp.dest( tanzim.movaghat ) );
+} );
 
-gulp.task('templatecache-dr', [ 'jade' ],  function() {
-    sabt('Creating an AngularJS $templateCache');
+gulp.task( 'templatecache-dr', [ 'jade' ], function () {
+	sabt( 'Creating an AngularJS $templateCache' );
 
-    return gulp
-        .src(tanzim.frthtmltmp)
-        .pipe(p$.angularTemplatecache(
-            tanzim.templateCache.file,
-            tanzim.templateCache.gozineha
-        ))
-        .pipe(gulp.dest(tanzim.movaghat));
-});
+	return gulp
+		.src( tanzim.frthtmltmp )
+		.pipe( p$.angularTemplatecache(
+			tanzim.templateCache.file,
+			tanzim.templateCache.gozineha
+		) )
+		.pipe( gulp.dest( tanzim.movaghat ) );
+} );
 
 gulp.task( 'behinesazi-site', [ 'tazrigh', 'templatecache-site' ], function () {
 
@@ -130,13 +130,14 @@ gulp.task( 'behinesazi-site', [ 'tazrigh', 'templatecache-site' ], function () {
 		.pipe( p$.useref() )
 		.pipe( jsCssFilter.restore )
 		.pipe( p$.revReplace() )
+		.pipe( p$.prefix( 'frt-editor/' ) )
 		.pipe( gulp.dest( tanzim.tolidSite ) );
 } );
 
 gulp.task( 'behinesazi-dr', [ 'styl', 'templatecache-dr' ], function () {
 
 	sabt( 'Darim javascript, css va html ro behinesazi-dr mikonim' );
-var cssFilter = p$.filter( [ '**/*.css' ], {
+	var cssFilter = p$.filter( [ '**/*.css' ], {
 		restore: true,
 	} );
 	var jsFilter = p$.filter( [ '**/*.js' ], {
@@ -148,10 +149,10 @@ var cssFilter = p$.filter( [ '**/*.css' ], {
 		.pipe( p$.plumber() )
 		.pipe( cssFilter )
 		.pipe( p$.csso() )
-		.pipe( p$.concat('frt-editor.css') )
+		.pipe( p$.concat( 'frt-editor.css' ) )
 		.pipe( cssFilter.restore )
 		.pipe( jsFilter )
-		.pipe( p$.concat('frt-editor.js') )
+		.pipe( p$.concat( 'frt-editor.js' ) )
 		.pipe( p$.ngAnnotate() )
 		.pipe( p$.uglify() )
 		.pipe( jsFilter.restore )
