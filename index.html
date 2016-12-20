@@ -26,25 +26,31 @@
 
 <body ng-controller="asliCtrl">
 
+    <div class="github">
+        <a href="https://github.com/hemedani/frt-editor">
+            <img class="icon-arm" src="tasv/github.png" alt="Github">
+        </a>
+    </div>
+
     <div class="navbar">
         <div class="romenu">
             <a ui-sref='khane'>
-                <img class="icon-arm" src="tasv/arm-frt-editor.png" alt="arm-baloot" />
+                <img class="icon-arm" src="tasv/arm-frt-editor.png" alt="frtEditor" />
                 <span>ویرایشگر غنی متون فارسی برای انگولار</span>
             </a>
         </div>
         <div id="navmenu">
-          <div class="zirmenu">
-              <nav>
-                  <span class="menu-icon ion-navicon-round" , ng-click='bazmenu()'></span>
-                  <a class='meni-item' ui-sref="khane">خانه</a>
-                  <a class='meni-item' ui-sref="nahve">نحوه استفاده</a>
-                  <a class='meni-item' ui-sref="tose">توسعه دهندگان</a>
-                  <a class='meni-item' ui-sref="mali">کمک مالی</a>
-                  <a class='meni-item' ui-sref="link">لینک های مفید</a>
-              </nav>
+            <div class="zirmenu">
+                <nav>
+                    <span class="menu-icon ion-navicon-round" , ng-click='bazmenu()'></span>
+                    <a class='meni-item' ui-sref="khane">خانه</a>
+                    <a class='meni-item' ui-sref="nahve">نحوه استفاده</a>
+                    <a class='meni-item' ui-sref="tose">توسعه دهندگان</a>
+                    <a class='meni-item' ui-sref="mali">کمک مالی</a>
+                    <a class='meni-item' ui-sref="link">لینک های مفید</a>
+                </nav>
 
-          </div>
+            </div>
         </div>
     </div>
 
@@ -68,9 +74,17 @@
     <!-- inject:js -->
     <script src="barname/barname.vahed.js"></script>
     <script src="barname/khane/khane.vahed.js"></script>
+    <script src="barname/link/link.vahed.js"></script>
+    <script src="barname/mali/mali.vahed.js"></script>
+    <script src="barname/nahve/nahve.vahed.js"></script>
+    <script src="barname/tose/tose.vahed.js"></script>
     <script src="barname/barname.ctrl.js"></script>
     <script src="barname/directive/frt.editor.dr.js"></script>
     <script src="barname/khane/khane.ctrl.js"></script>
+    <script src="barname/link/link.ctrl.js"></script>
+    <script src="barname/mali/mali.ctrl.js"></script>
+    <script src="barname/nahve/nahve.ctrl.js"></script>
+    <script src="barname/tose/tose.ctrl.js"></script>
     <!-- endinject -->
 
     <!-- inject:templateha:js -->

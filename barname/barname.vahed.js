@@ -14,6 +14,10 @@
 
 			//vahed haye safahat site
 			'barname.khane',
+			'barname.nahve',
+			'barname.mali',
+			'barname.link',
+			'barname.tose',
 
 		] )
 		.config( tanzimBarname );
