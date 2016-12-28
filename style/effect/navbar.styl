@@ -11,9 +11,11 @@
   >*
     width: 100%
   .romenu
-    height: 7.2rem
+    min-height: 7.2rem
     background-color: rgb(226, 226, 226)
-    padding-top: 0.5rem
+    padding-top: 0.8rem
+    padding-bottom: 0.8rem
+    text-align: center
     a
       text-decoration: none
       color: darken(ghermez(1), 30%)
@@ -24,11 +26,13 @@
       justify-content: center
       span
         font-size: 2rem
+        margin-top: 0.5rem
+        line-height: 1.3
   .zirmenu
-    height: 4.5rem
+    min-height: 4.5rem
     background-color rgb(43, 45, 50)
     border-bottom: 1px solid rgb(92, 91, 91)
-    padding: 0 5%
+    // padding: 0 5%
     display: flex
     flex-flow: row wrap
     align-content: center
@@ -59,15 +63,20 @@
           flex-basis: 20%
           display: block
         &:hover
-          color: rgb(92, 91, 91)
+          color: sefid(1)
+          background-color: lighten(tosi(1), 20%)
       .menu-icon
         color: rgb(170, 170, 170)
         font-size: 2rem
-        padding-right: 52%
-        padding-top: 0.6rem
+        margin: 0 auto
+        // padding-right: 50%
+        padding-top: 1.2rem
         cursor: pointer
         &:hover
           color: rgb(255, 255, 255)
+
+    .faal
+      background-color: lighten(tosi(1), 20%)
 
 .sticky
   position: fixed
@@ -76,8 +85,12 @@
   z-index: 999
   animation: slideInDown 0.8s
   .zirmenu
-    height: 3.5rem
+    min-height: 3.5rem
 
 
 .bodyfasballa
   margin-top: 3.5rem
+
+.i-navicon-round
+	&:before
+		content: '\2630'

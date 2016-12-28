@@ -17,6 +17,9 @@
 
 		$rootScope.$on( '$stateChangeSuccess', function () {
 			$window.scrollTo( 0, 0 );
+			for ( var i = 0; i < el.length; i++ ) {
+				el[ i ].classList.remove( 'nemayesh-bede' );
+			}
 		} );
 
 		$window.addEventListener( 'scroll', function () {
@@ -36,6 +39,29 @@
 				el[ i ].classList.toggle( 'nemayesh-bede' );
 			}
 		};
+
+		$scope.menuha = [
+			{
+				state: 'khane',
+				name: 'خانه'
+			},
+			{
+				state: 'nahve',
+				name: 'نحوه استفاده'
+			},
+			{
+				state: 'tose',
+				name: 'توسعه دهندگان'
+			},
+			{
+				state: 'mali',
+				name: 'کمک مالی'
+			},
+			{
+				state: 'link',
+				name: 'لینک های مفید'
+			}
+		];
 
 	}
 }() );

@@ -42,12 +42,8 @@
         <div id="navmenu">
             <div class="zirmenu">
                 <nav>
-                    <span class="menu-icon ion-navicon-round" , ng-click='bazmenu()'></span>
-                    <a class='meni-item' ui-sref="khane">خانه</a>
-                    <a class='meni-item' ui-sref="nahve">نحوه استفاده</a>
-                    <a class='meni-item' ui-sref="tose">توسعه دهندگان</a>
-                    <a class='meni-item' ui-sref="mali">کمک مالی</a>
-                    <a class='meni-item' ui-sref="link">لینک های مفید</a>
+                    <span class="menu-icon i-navicon-round" , ng-click='bazmenu()'></span>
+                    <a class='meni-item' ng-repeat="menu in menuha" ui-sref-active="faal" ui-sref="{{menu.state}}">{{menu.name}}</a>
                 </nav>
 
             </div>

@@ -69,13 +69,16 @@
   position: relative
   padding: 0.2rem 0
   background-color: lighten(bezh(1), 80%)
-  &:after
+  &::after
   	content: ''
   	position: absolute
-  	bottom: 0
+  	top: 0.2rem
   	right: 0
   	width: 100%
   	border-bottom: 1px solid tosi(1)
+  &:first-child
+    &::after
+      border-width: 0
 
 .dogmeha-rt
 	border-left: 2px solid sorme(1)

@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="frt-editor/styles/ketab-024606b622.css">
 
-    <link rel="stylesheet" href="frt-editor/styles/narm-bee5d3e7e2.css">
+    <link rel="stylesheet" href="frt-editor/styles/narm-c97edfddc9.css">
 
 </head>
 
@@ -32,12 +32,8 @@
         <div id="navmenu">
             <div class="zirmenu">
                 <nav>
-                    <span class="menu-icon ion-navicon-round" , ng-click='bazmenu()'></span>
-                    <a class='meni-item' ui-sref="khane">خانه</a>
-                    <a class='meni-item' ui-sref="nahve">نحوه استفاده</a>
-                    <a class='meni-item' ui-sref="tose">توسعه دهندگان</a>
-                    <a class='meni-item' ui-sref="mali">کمک مالی</a>
-                    <a class='meni-item' ui-sref="link">لینک های مفید</a>
+                    <span class="menu-icon i-navicon-round" , ng-click='bazmenu()'></span>
+                    <a class='meni-item' ng-repeat="menu in menuha" ui-sref-active="faal" ui-sref="{{menu.state}}">{{menu.name}}</a>
                 </nav>
 
             </div>
@@ -99,7 +95,7 @@
 
     <script src="frt-editor/js/ketab-a2275bc4e4.js"></script>
 
-    <script src="frt-editor/js/narm-2acc1f4e70.js"></script>
+    <script src="frt-editor/js/narm-a695ceddb0.js"></script>
 
 </body>
 
