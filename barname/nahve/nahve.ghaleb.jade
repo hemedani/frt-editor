@@ -1,4 +1,54 @@
 .gride
+  .posht
+    h1 طریقه نصب
+  .noh-darbar
+    | دو فایل
+    ul
+      li frt-editor.css
+      li frt-editor.js
+    | رو که در پوشه ی تولید (tolid) هستند رو در فایل ایندکس (index.html) خودتون اضافه کنید، حواستون باشه که فایل CSS رو داخل تگ head و فایل JS رو قبل از بسته شدن تگ body و حتما بعد از انگولار قرار بدید:
+    
+    pre.code
+      | &lt;head&gt;
+      | .
+      | .
+      | .
+      |   &lt;link rel=&quot;stylesheet&quot; href=&quot;xyz/frt-editor.css&quot;&gt;
+      | &lt;/head&gt;
+      | &lt;body&gt;
+      | .
+      | .
+      | .
+      |   &lt;script src=&quot;xyz/angular.js&quot;&gt;&lt;/script&gt;
+      |   &lt;script src=&quot;xyz/frt-editor.js&quot;&gt;&lt;/script&gt;
+      | &lt;/body&gt;
+    
+    | و بعد دایرکتیو رو به عنوان یه وابستگی به ماژول انگولار اضافه اش کنید:
+    
+    pre.code
+      |  angular.module( 'barname', [
+      |            // directive
+      |            'frtEditor',
+      |        ] )
+      |        .config( tanzimBarname );
+    
+    | حالا فقط کافی هر جایی که لازم دارید از ویرایشگر استفاده کنید تگش رو بذارید:
+    
+    pre.code
+      |  &lt;frt-editor ng-model=&quot;matnkamel&quot;&gt;&lt;/frt-editor&gt;
+    br
+    hr
+    br
+    h2 نصب ویرایشگر از طریق باور (Bower):
+    br
+    | برای نصب ویرایشگر از طریق باور (Bower) هم میتونید از این دستور استفاده کنید :
+    
+    pre.code
+      | bower install frt-editor --save
+    
+    | این دستور کل ریپوی پروژه رو تو پوشه ي bower_components یا هر پوشه ای که خودتون تنظیم کردید دانلود میکنه فقط کافیه آدرس دو تا فایل ای که داخل پوشه تولید (tolid) ریپو هست رو به صفحه ایندکس اضافه کنید اگر هم انجام این کار رو با task runnerها مثل Gulp اتوماتیک کردید این دوتا فایل خودکار به صفحه ایندکس اضافه میشند.
+
+.gride
 
   .posht
       
@@ -7,9 +57,9 @@
     
     h2  معرفی ویرایشگر
     br
-    .h_iframe-aparat_embed_frame
+    .jabeh_iframe
       span(style='display: block;padding-top: 57%')
-      iframe(src='https://www.aparat.com/video/video/embed/videohash/oFny8/vt/frame', allowfullscreen='true', webkitallowfullscreen='true', mozallowfullscreen='true')
+      iframe(src='http://jabeh.com/watch/j766d8/embed', allowfullscreen='true', webkitallowfullscreen='true', mozallowfullscreen='true')
     br
     hr
     br
@@ -46,3 +96,35 @@
     .h_iframe-aparat_embed_frame
       span(style='display: block;padding-top: 57%')
       iframe(src='https://www.aparat.com/video/video/embed/videohash/V2jkr/vt/frame', allowfullscreen='true', webkitallowfullscreen='true', mozallowfullscreen='true')
+    
+    br
+    hr
+    br
+    br
+    h2  گذاشتن اظهار نظرها
+    br
+    .jabeh_iframe
+      span(style='display: block;padding-top: 57%')
+      iframe(src='http://jabeh.com/watch/j988bb/embed', allowfullscreen='true', webkitallowfullscreen='true', mozallowfullscreen='true')
+    
+    br
+    hr
+    br
+    br
+    h2  فونت و اندازه
+    br
+    .jabeh_iframe
+      span(style='display: block;padding-top: 57%')
+      iframe(src='http://jabeh.com/watch/053318/embed', allowfullscreen='true', webkitallowfullscreen='true', mozallowfullscreen='true')
+    
+    br
+    hr
+    br
+    br
+    h2  استفاده کلی
+    br
+    .jabeh_iframe
+      span(style='display: block;padding-top: 57%')
+      iframe(src='http://jabeh.com/watch/jb22ed/embed', allowfullscreen='true', webkitallowfullscreen='true', mozallowfullscreen='true')
+      
+      
